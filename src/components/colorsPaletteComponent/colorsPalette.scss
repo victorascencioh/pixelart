@@ -1,0 +1,50 @@
+@import '../../scss/pixel-art.scss';
+@import '../../scss/settings.scss';
+
+.colors-palette__container {
+    display: flex;
+    justify-content: center;
+    background-color: $purple-haze;
+}
+
+.colors-palette {
+    display: flex;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    max-width: 650px;
+}
+
+.color-palette-item {
+    background-color: var(--hexa-code);
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    border: 1px solid black;
+    margin: 3px;
+    cursor: pointer;
+    transition: transform .2s;
+    @media only screen and (min-width: 768px) and (orientation: landscape){
+        width: 50px;
+        height: 50px;
+    }
+    
+    &:hover,
+    &:focus,
+    &.is-active {
+        transform: scale(1.1);
+        transform-origin: center;
+        box-sizing: content-box;
+    } 
+}
+
+#new-color {
+    display: none;
+}
+
+label[for='new-color'] {
+    &::before {
+        font-family: 'pixel-art';
+        content: $eyedropper;
+        margin-right: 5px;
+    }
+}

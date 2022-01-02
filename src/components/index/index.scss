@@ -1,0 +1,61 @@
+@import './../../scss/settings.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 340px;
+}
+
+.subtitle {
+    color: $white;
+    text-transform: uppercase;
+}
+
+.top-bar {
+    display: flex;
+    border-bottom: 2px solid $black;
+    color: $white;
+    background-color: $dark-blue;
+    flex-direction: column-reverse;
+    @media only screen and (min-width: 768px) and (orientation: landscape) {
+        flex-direction: row;
+    }
+}
+
+.top-bar-left {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pixel-art-navigation {
+    display: flex;
+    align-items: center; 
+    text-transform: uppercase;
+    justify-content: center;
+    @media only screen and (min-width: 768px) and (orientation: landscape) {
+        justify-content: flex-start;
+    }
+}
+
+.pixel-art-navigation li {
+    list-style: none;
+}
+
+.pixel-art-navigation {
+    label, button {
+        font-size: 16px;
+        padding: 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        &:hover {
+            background-color: rgba($purple-haze, 0.2);
+        }
+    }
+}
+

@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'pixel-art';
+    src: url('./../../fonts/pixel-art/pixel-art.eot?yo8ksd');
+    src: url('./../../fonts/pixel-art/pixel-art.eot?yo8ksd#iefix') format('embedded-opentype'),
+      url('./../../fonts/pixel-art/pixel-art.ttf?yo8ksd') format('truetype'),
+      url('./../../fonts/pixel-art/pixel-art.woff?yo8ksd') format('woff'),
+      url('./../../fonts/pixel-art/pixel-art.svg?yo8ksd#pixel-art') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'pixel-art' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  $bucket-tool: "\e900";
+  $eyedropper: "\e90a";
+  $download: "\e901";
+  $grid: "\ea71";
+  $instructions: "\e9b9";
+  
+  .icon-paint-bucket:before {
+    content: $bucket-tool;
+  }
+  .icon-file_download:before {
+    content: $download;
+  }
+  .icon-eyedropper:before {
+    content: $eyedropper;
+  }
+  .icon-folder-download:before {
+    content: "\e933";
+  }
+  .icon-floppy-disk:before {
+    content: "\e962";
+  }
+  .icon-list-numbered:before {
+    content: $instructions;
+  }
+  .icon-download2:before {
+    content: "\e9c5";
+  }
+  .icon-table2:before {
+    content: $grid;
+  }
+  
