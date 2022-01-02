@@ -110,9 +110,6 @@ export default class ColorsPaletteComponent {
 
     private removeColorFromPalette(): void {
         const colors = document.querySelectorAll<HTMLElement>('.js-color-palette-item');
-        console.log(colors.length);
-        if (colors.length > LIMIT_DEFAULT_COLORS) {
-            colors.item(0).remove();
-        }
+        if (colors.length > LIMIT_DEFAULT_COLORS) colors.item(0).remove();
     }
 }
